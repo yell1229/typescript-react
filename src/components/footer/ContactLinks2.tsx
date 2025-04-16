@@ -16,8 +16,8 @@ const ContactLinks2: React.FC = () => {
     ];
     return (
         <ul className="contact__links">
-            {contactList && contactList.map((item) => 
-                <li>
+            {contactList && contactList.map((item,i) => 
+                <li key={`list${i}`}>
                     <a className="contact__link" href={item.href}>
                         {item.type === 'github' && <FontAwesomeIcon icon={faGithub} />}
                         {item.type === 'linkedin' && <FontAwesomeIcon icon={faLinkedin} />}

@@ -14,7 +14,6 @@ interface ComponentNode {
 }
 
 const Skills2: React.FC<Skills2Props> = ({children}) => {
-    console.log(children);
     
     return (
         <div className="skills">
